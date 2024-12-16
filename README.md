@@ -12,6 +12,8 @@ Prima di eseguire lo script, assicurati di avere installato Python e la libreria
 ```bash
 pip install matplotlib
 
+![Esempio di Spirale Aurea](screenshot.png)
+
 ## Autore
 
 Creato da [KaISBC](https://github.com/KaISBC).
