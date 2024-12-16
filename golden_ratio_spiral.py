@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from matplotlib.patches import Arc  # Corretto import da patches
 
 def draw_golden_spiral(n_rectangles=10):
     """Disegna una spirale basata sulla proporzione aurea."""
@@ -21,7 +22,7 @@ def draw_golden_spiral(n_rectangles=10):
         # Disegna un arco per la spirale
         theta1 = i * 90
         theta2 = theta1 + 90
-        arc = plt.Arc((x + width, y), width * 2, height * 2, theta1=theta1, theta2=theta2, color="blue")
+        arc = Arc((x + width, y), width * 2, height * 2, theta1=theta1, theta2=theta2, color="blue")
         ax.add_patch(arc)
 
         # Aggiorna le dimensioni per il prossimo rettangolo
